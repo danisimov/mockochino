@@ -17,6 +17,13 @@ public class Settings {
     private String token;
     private JsonNode response;
 
+    Settings() {
+    }
+
+    Settings(UUID uuid) {
+        setUuid(uuid);
+    }
+
     public UUID getUuid() {
         return uuid;
     }
@@ -57,8 +64,7 @@ public class Settings {
         this.response = response;
     }
 
-    public Settings setDefaultSettings(UUID uuid) {
-        setUuid(uuid);
+    public Settings setDefaultSettings() {
         setDelay(0);
         setCode(200);
         setToken("");

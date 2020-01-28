@@ -31,7 +31,7 @@ public class SettingsManager {
 
     public synchronized boolean add(UUID uuid) {
         if (!exists(uuid)) {
-            Settings settings = new Settings().setDefaultSettings(uuid);
+            Settings settings = new Settings(uuid).setDefaultSettings();
             return DBClient.insert("INSERT INTO settings VALUES ('" + settings.getUuid()
                     + "'," + settings.getDelay() + "," + settings.getCode()
                     + ",'" + settings.getToken() + "','" + settings.getResponse() + "')");

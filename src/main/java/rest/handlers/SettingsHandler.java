@@ -113,7 +113,7 @@ public class SettingsHandler {
         Settings settings = settingsManager.getByUUID(uuid);
 
         if (settings != null) {
-            if (settingsManager.update(settings.setDefaultSettings(uuid))) {
+            if (settingsManager.update(settings.setDefaultSettings())) {
                 return Response.status(200).entity(new ObjectMapper().createObjectNode()
                         .put(Const.RESULT, true)).build();
             } else {
