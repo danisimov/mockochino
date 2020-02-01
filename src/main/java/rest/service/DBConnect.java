@@ -26,7 +26,7 @@ class DBConnect {
     private static void setConnection() {
         try {
             // create a connection to the database
-            connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/rest/db/mockochino.db");
+            connection = DriverManager.getConnection("jdbc:sqlite::resource:db/mockochino.db");
             Logger.getLogger(DBConnect.class.getName()).info("Connection to SQLite has been established.");
         } catch (SQLException e) {
             Logger.getLogger(DBConnect.class.getName()).warning(e.getMessage());

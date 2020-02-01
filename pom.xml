@@ -113,7 +113,7 @@
                 <version>3.8.1</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <release>10</release>
+                    <release>8</release>
                 </configuration>
             </plugin>
 
