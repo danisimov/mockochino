@@ -22,25 +22,12 @@ public class MockHandlerWithNotInitializedSettingsTest extends ServerTestBase {
      * Mock tests
      */
     @Test
-    public void getTest() {
-        UUID uuid = UUID.randomUUID();
-        JsonNode responseMsg;
-        try {
-            responseMsg = target.path("mock/" + uuid).request().get(JsonNode.class);
-        } catch (NotFoundException e) {
-            responseMsg = e.getResponse().readEntity(JsonNode.class);
-        }
-        System.out.println(responseMsg);
-        Asserts.verifyBoolean(responseMsg, Const.RESULT, false);
-        Asserts.verifyString(responseMsg, Const.MESSAGE, Const.buildNoSuchSettingsMessage(uuid));
-    }
-
-    @Test
     public void postTest() {
         UUID uuid = UUID.randomUUID();
         JsonNode responseMsg;
         try {
-            responseMsg = target.path("mock/" + uuid).request().post(Entity.json(null), JsonNode.class);
+            responseMsg = target.path("mock/" + uuid).request()
+                    .post(Entity.json(buildTestJson(UUID.randomUUID().toString())), JsonNode.class);
         } catch (NotFoundException e) {
             responseMsg = e.getResponse().readEntity(JsonNode.class);
         }
@@ -54,21 +41,8 @@ public class MockHandlerWithNotInitializedSettingsTest extends ServerTestBase {
         UUID uuid = UUID.randomUUID();
         JsonNode responseMsg;
         try {
-            responseMsg = target.path("mock/" + uuid).request().put(Entity.text("test"), JsonNode.class);
-        } catch (NotFoundException e) {
-            responseMsg = e.getResponse().readEntity(JsonNode.class);
-        }
-        System.out.println(responseMsg);
-        Asserts.verifyBoolean(responseMsg, Const.RESULT, false);
-        Asserts.verifyString(responseMsg, Const.MESSAGE, Const.buildNoSuchSettingsMessage(uuid));
-    }
-
-    @Test
-    public void deleteTest() {
-        UUID uuid = UUID.randomUUID();
-        JsonNode responseMsg;
-        try {
-            responseMsg = target.path("mock/" + uuid).request().delete(JsonNode.class);
+            responseMsg = target.path("mock/" + uuid).request()
+                    .put(Entity.json(buildTestJson(UUID.randomUUID().toString())), JsonNode.class);
         } catch (NotFoundException e) {
             responseMsg = e.getResponse().readEntity(JsonNode.class);
         }
@@ -80,16 +54,9 @@ public class MockHandlerWithNotInitializedSettingsTest extends ServerTestBase {
     @Test
     public void patchTest() {
         UUID uuid = UUID.randomUUID();
-        Response responseMsg = target.path("mock/" + uuid).request().build("PATCH", Entity.text("test"))
+        Response responseMsg = target.path("mock/" + uuid).request().build("PATCH",
+                Entity.json(buildTestJson(UUID.randomUUID().toString())))
                 .property(HttpUrlConnectorProvider.SET_METHOD_WORKAROUND, true).invoke();
-        System.out.println(responseMsg);
-        Assert.assertEquals(responseMsg.getStatus(), 404);
-    }
-
-    @Test
-    public void headTest() {
-        UUID uuid = UUID.randomUUID();
-        Response responseMsg = target.path("mock/" + uuid).request().head();
         System.out.println(responseMsg);
         Assert.assertEquals(responseMsg.getStatus(), 404);
     }

@@ -24,47 +24,27 @@ public class MockHandler {
      *
      * @return Response that will be returned as a json.
      */
-    @GET
-    @Consumes(MediaType.WILDCARD)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response get(@PathParam(Const.UUID) UUID uuid, String request, @HeaderParam("Authorization") String token) throws InterruptedException {
-        return processRequest(uuid, request, true, token);
-    }
-
     @POST
-    @Consumes(MediaType.WILDCARD)
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response post(@PathParam(Const.UUID) UUID uuid, String request, @HeaderParam("Authorization") String token) throws InterruptedException {
         return processRequest(uuid, request, true, token);
     }
 
     @PUT
-    @Consumes(MediaType.WILDCARD)
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response put(@PathParam(Const.UUID) UUID uuid, String request, @HeaderParam("Authorization") String token) throws InterruptedException {
         return processRequest(uuid, request, true, token);
     }
 
-    @DELETE
-    @Consumes(MediaType.WILDCARD)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response delete(@PathParam(Const.UUID) UUID uuid, String request, @HeaderParam("Authorization") String token) throws InterruptedException {
-        return processRequest(uuid, request, true, token);
-    }
-
     @PATCH
-    @Consumes(MediaType.WILDCARD)
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response patch(@PathParam(Const.UUID) UUID uuid, String request, @HeaderParam("Authorization") String token) throws InterruptedException {
         return processRequest(uuid, request, true, token);
     }
 
-    @HEAD
-    @Consumes(MediaType.WILDCARD)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response head(@PathParam(Const.UUID) UUID uuid, String request, @HeaderParam("Authorization") String token) throws InterruptedException {
-        return processRequest(uuid, request, false, token);
-    }
 
     private Response processRequest(UUID uuid, String request, boolean withResponseBody, String token) throws InterruptedException {
         Settings settings = SettingsManager.getInstance().getByUUID(uuid);
