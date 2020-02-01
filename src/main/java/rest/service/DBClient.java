@@ -8,20 +8,20 @@ import java.util.logging.Logger;
 /**
  * Created by danisimov on 1/15/20
  */
-public class DBClient {
+class DBClient {
 
     private DBClient() {
     }
 
-    public static boolean insert(String query) {
+    static boolean insert(String query) {
         return executeUpdate(query);
     }
 
-    public static boolean update(String query) {
+    static boolean update(String query) {
         return executeUpdate(query);
     }
 
-    public static int count(String query) {
+    static int count(String query) {
         try (ResultSet rs = DBConnect.getStatement().executeQuery(query)) {
             rs.next();
             return rs.getInt(1);
@@ -31,7 +31,7 @@ public class DBClient {
         }
     }
 
-    public static boolean delete(String query) {
+    static boolean delete(String query) {
         return executeUpdate(query);
     }
 

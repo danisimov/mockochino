@@ -9,14 +9,14 @@ import java.util.logging.Logger;
 /**
  * Created by danisimov on 1/10/20
  */
-public class DBConnect {
+class DBConnect {
 
     private static Connection connection;
 
     private DBConnect() {
     }
 
-    public static Statement getStatement() {
+    static Statement getStatement() {
         if (connection == null) {
             setConnection();
         }
