@@ -4,4 +4,4 @@ This application is able to replace any nodes in the JSON based microservice sys
 - Verify authorization tokens.
 - Collect all incoming requests for subsequent verification.
 
-*The application is intended for deployment within the network
+*Application is intended for deployment within the network
