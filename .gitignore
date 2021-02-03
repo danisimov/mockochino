@@ -11,3 +11,4 @@
 *.log
 *.orig
 *.rej
+dependency-reduced-pom.xml
