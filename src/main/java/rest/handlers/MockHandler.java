@@ -45,7 +45,6 @@ public class MockHandler {
         return processRequest(uuid, request, true, token);
     }
 
-
     private Response processRequest(UUID uuid, String request, boolean withResponseBody, String token) throws InterruptedException {
         Settings settings = SettingsManager.getInstance().getByUUID(uuid);
 

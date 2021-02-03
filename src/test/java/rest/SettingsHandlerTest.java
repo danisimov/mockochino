@@ -1,7 +1,6 @@
 package rest;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import rest.base.Asserts;
 import rest.base.UUIDTestBase;
@@ -9,7 +8,6 @@ import rest.service.Const;
 import rest.service.Settings;
 import rest.service.SettingsManager;
 
-import javax.ws.rs.NotAuthorizedException;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.client.Entity;
 import java.util.UUID;
