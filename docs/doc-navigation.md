@@ -1,3 +1,5 @@
+{% include_relative navigation-bar.md %}
+
 [Setup the application](setup.html)<br>
 [Initialize handler](init-handler.html)<br>
 [Get list of initialized handlers](get-handlers-list.html)<br>
