@@ -1,4 +1,4 @@
-{% include_relative doc-navigation.md %}
+{% include_relative doc-navigation-bar.md %}
 
 **Default port:** 5000<br>
 **Default handler settings:**<br>

@@ -1,4 +1,4 @@
-{% include_relative doc-navigation.md %}
+{% include_relative doc-navigation-bar.md %}
 
 **Type:** DELETE<br>
 **Path:** /request<br>
