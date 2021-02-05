@@ -1,4 +1,4 @@
-{{md  doc-navigation.md}}
+{% include_relative doc-navigation.md %}
 
 **Type:** POST<br>
 **Path:** /settings/reset/{{uuid}}<br>

@@ -1,4 +1,4 @@
-{% include doc-navigation.md %}
+{% include_relative doc-navigation.md %}
 
 **Type:** DELETE<br>
 **Path:** /settings/{{uuid}}<br>

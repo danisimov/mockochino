@@ -1,4 +1,4 @@
-{{md  doc-navigation.md}}
+{% include_relative doc-navigation.md %}
 
 **Type:** PATCH<br>
 **Path:** mock/{{uuid}}<br>
