@@ -1,1 +1,1 @@
-[Home](index.html) `|` [Documentation](setup.html)
+[Home](index.html) `|` [Documentation](setup.html) `|` [Downloads](downloads.html)
