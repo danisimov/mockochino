@@ -8,9 +8,9 @@ import rest.base.Asserts;
 import rest.base.ServerTestBase;
 import rest.service.Const;
 
-import javax.ws.rs.NotFoundException;
-import javax.ws.rs.client.Entity;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.NotFoundException;
+import jakarta.ws.rs.client.Entity;
+import jakarta.ws.rs.core.Response;
 import java.util.UUID;
 
 /**

@@ -6,9 +6,9 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import rest.service.Const;
 import rest.service.Main;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.WebTarget;
 import java.util.UUID;
 
 class Service {
