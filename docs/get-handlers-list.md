@@ -17,6 +17,16 @@
         "result": true,
         "message": "echo"
       }
+    },
+    {
+      "uuid": "74f7cd3c-2373-11ec-9621-0242ac130002",
+      "delay": 0,
+      "code": 404,
+      "token": "",
+      "response": {
+        "result": false,
+        "message": "echo"
+      }
     }
   ]
 }
