@@ -1,7 +1,7 @@
 {% include_relative doc-navigation-bar.md %}
 
 **Type:** GET<br>
-**Path:** /settings/{{uuid}}<br>
+**Path:** /settings/\{\{uuid\}\}<br>
 **Parameters:** NONE<br>
 **Response:**<br>
 ```shell
