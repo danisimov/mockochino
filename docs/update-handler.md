@@ -1,7 +1,7 @@
 {% include_relative doc-navigation-bar.md %}
 
 **Type:** POST<br>
-**Path:** /settings/{{uuid}}<br>
+**Path:** /settings/\{\{uuid\}\}<br>
 **Parameters:**<br>
 ```shell
 (int) delay - set request processing delay in ms
