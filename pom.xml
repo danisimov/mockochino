@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mock.rest</groupId>
+    <groupId>com.github.danisimov</groupId>
     <artifactId>mockochino</artifactId>
     <packaging>jar</packaging>
     <version>1.0.1</version>
