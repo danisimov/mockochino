@@ -4,6 +4,7 @@
 **Path:** /settings<br>
 **Parameters:** NONE<br>
 **Response:**<br>
+
 ```shell
 {
   "result": true,

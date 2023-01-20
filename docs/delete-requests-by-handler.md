@@ -4,6 +4,7 @@
 **Path:** /request/\{\{uuid\}\}<br>
 **Parameters:** NONE<br>
 **Response:**<br>
+
 ```shell
 {
   "result": true

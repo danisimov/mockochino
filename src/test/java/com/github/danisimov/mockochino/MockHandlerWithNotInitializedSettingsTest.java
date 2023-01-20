@@ -1,16 +1,16 @@
 package com.github.danisimov.mockochino;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.glassfish.jersey.client.HttpUrlConnectorProvider;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import com.github.danisimov.mockochino.base.Asserts;
 import com.github.danisimov.mockochino.base.ServerTestBase;
 import com.github.danisimov.mockochino.service.Const;
-
 import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.core.Response;
+import org.glassfish.jersey.client.HttpUrlConnectorProvider;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.UUID;
 
 /**
@@ -55,7 +55,7 @@ public class MockHandlerWithNotInitializedSettingsTest extends ServerTestBase {
     public void patchTest() {
         UUID uuid = UUID.randomUUID();
         Response responseMsg = target.path("mock/" + uuid).request().build("PATCH",
-                Entity.json(buildTestJson(UUID.randomUUID().toString())))
+                        Entity.json(buildTestJson(UUID.randomUUID().toString())))
                 .property(HttpUrlConnectorProvider.SET_METHOD_WORKAROUND, true).invoke();
         System.out.println(responseMsg);
         Assert.assertEquals(responseMsg.getStatus(), 404);

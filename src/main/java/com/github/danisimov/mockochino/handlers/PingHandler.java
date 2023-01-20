@@ -2,7 +2,6 @@ package com.github.danisimov.mockochino.handlers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.danisimov.mockochino.service.Const;
-
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

@@ -4,6 +4,7 @@
 **Path:** /request<br>
 **Parameters:** NONE<br>
 **Response:**<br>
+
 ```shell
 {
   "result": true

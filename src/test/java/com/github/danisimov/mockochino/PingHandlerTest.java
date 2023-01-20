@@ -1,10 +1,10 @@
 package com.github.danisimov.mockochino;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.testng.annotations.Test;
 import com.github.danisimov.mockochino.base.Asserts;
 import com.github.danisimov.mockochino.base.ServerTestBase;
 import com.github.danisimov.mockochino.service.Const;
+import org.testng.annotations.Test;
 
 /**
  * Created by danisimov on 8/6/19

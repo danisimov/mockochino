@@ -4,6 +4,7 @@
 **Path:** /request/count/\{\{uuid\}\}<br>
 **Parameters:** NONE<br>
 **Response:**<br>
+
 ```shell
 {
   "result": true,

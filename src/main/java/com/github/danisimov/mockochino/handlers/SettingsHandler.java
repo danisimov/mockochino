@@ -5,10 +5,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.danisimov.mockochino.service.Const;
 import com.github.danisimov.mockochino.service.Settings;
 import com.github.danisimov.mockochino.service.SettingsManager;
-
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+
 import java.util.UUID;
 
 /**

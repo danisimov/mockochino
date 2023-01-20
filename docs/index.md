@@ -1,6 +1,8 @@
 {% include_relative navigation-bar.md %}
 
-This application is able to replace any nodes in the JSON based microservice system. While emulating the replaced node for all incoming requests application is able to:
+This application is able to replace any nodes in the JSON based microservice system. While emulating the replaced node
+for all incoming requests application is able to:
+
 - Produce pre-seted HTTP responses and HTTP status codes to all incoming requests.
 - Emulate requests processing delay.
 - Verify authorization tokens.
