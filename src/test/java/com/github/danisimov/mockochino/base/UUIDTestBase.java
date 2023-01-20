@@ -1,4 +1,4 @@
-package rest.base;
+package com.github.danisimov.mockochino.base;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

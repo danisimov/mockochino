@@ -1,4 +1,4 @@
-package rest.base;
+package com.github.danisimov.mockochino.base;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.testng.Assert;

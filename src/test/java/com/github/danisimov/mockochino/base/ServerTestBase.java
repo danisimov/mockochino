@@ -1,9 +1,9 @@
-package rest.base;
+package com.github.danisimov.mockochino.base;
 
+import com.github.danisimov.mockochino.service.Main;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import rest.service.Main;
 
 /**
  * Created by danisimov on 8/6/19

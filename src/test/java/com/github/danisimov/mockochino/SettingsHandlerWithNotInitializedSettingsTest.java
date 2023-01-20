@@ -1,10 +1,10 @@
-package rest;
+package com.github.danisimov.mockochino;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.testng.annotations.Test;
-import rest.base.Asserts;
-import rest.base.ServerTestBase;
-import rest.service.Const;
+import com.github.danisimov.mockochino.base.Asserts;
+import com.github.danisimov.mockochino.base.ServerTestBase;
+import com.github.danisimov.mockochino.service.Const;
 
 import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.client.Entity;

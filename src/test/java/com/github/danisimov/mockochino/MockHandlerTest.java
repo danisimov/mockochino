@@ -1,13 +1,13 @@
-package rest;
+package com.github.danisimov.mockochino;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.glassfish.jersey.client.HttpUrlConnectorProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import rest.base.Asserts;
-import rest.base.UUIDTestBase;
-import rest.service.Const;
-import rest.service.SettingsManager;
+import com.github.danisimov.mockochino.base.Asserts;
+import com.github.danisimov.mockochino.base.UUIDTestBase;
+import com.github.danisimov.mockochino.service.Const;
+import com.github.danisimov.mockochino.service.SettingsManager;
 
 import jakarta.ws.rs.NotAuthorizedException;
 import jakarta.ws.rs.client.Entity;

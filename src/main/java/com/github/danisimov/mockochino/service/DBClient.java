@@ -1,4 +1,4 @@
-package rest.service;
+package com.github.danisimov.mockochino.service;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

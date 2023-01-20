@@ -1,8 +1,8 @@
-package rest.handlers;
+package com.github.danisimov.mockochino.handlers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import rest.service.Const;
-import rest.service.StorageManager;
+import com.github.danisimov.mockochino.service.Const;
+import com.github.danisimov.mockochino.service.StorageManager;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;

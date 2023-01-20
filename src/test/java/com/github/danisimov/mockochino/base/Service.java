@@ -1,10 +1,10 @@
-package rest.base;
+package com.github.danisimov.mockochino.base;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import rest.service.Const;
-import rest.service.Main;
+import com.github.danisimov.mockochino.service.Const;
+import com.github.danisimov.mockochino.service.Main;
 
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;

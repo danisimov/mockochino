@@ -1,4 +1,4 @@
-package rest.service;
+package com.github.danisimov.mockochino.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-package rest.service;
+package com.github.danisimov.mockochino.service;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
